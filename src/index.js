@@ -11,6 +11,8 @@ import Description from './components/Description';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let product = {
+  
+  smile: '¯\_(ツ)_/¯',
   name: 'Сочная буженина в фольге',
   image: '/img/1.jpg',
   title: 'Продукты (на 4 порции)',
@@ -27,6 +29,7 @@ root.render(
   
 <div className='wrapper'>
   <div className='mobail-screen'>
+  {product.smile}
 <Header text={product.name}/>
 <Image image={product.image}/>
 <Title title={product.title}/>
